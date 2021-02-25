@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 int maxProfit(vector<int>& prices) {            //atmost 2 transactions O(N)
-        ios_base::sync_with_stdio(false);
-        cin.tie(0);
-        cout.tie(0);
         int minprice1=INT_MAX, minprice2=INT_MAX;
         int maxprofit1=0,maxprofit2=0;
         for(int i=0;i<prices.size();i++){
@@ -30,6 +27,9 @@ int maxProfitk(vector<int>&prices ,int k){              //O(n^2)
 }
 
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
     vector <int> prices={1,2,3,6,3,2,1,4,5,6,0};
     cout<<maxProfitk(prices,3);
 }
